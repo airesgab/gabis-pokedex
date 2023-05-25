@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Gabi's Pokedex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-overlay">
+
+            <img src="./src/imagens/pokedex.png" class="pokedex" id="pokedex">
+            
+            <div class="escolher-cor"> 
+
+                <button onclick="pokeball()" id="alter-poke">
+                    <img src="./src/imagens/pokeball.png" alt="pokebola" class="logo">
+                </button>
+
+                <button onclick="shiny()" id="alter-shiny">
+                    <img src="./src/imagens/shiny.png" alt="shiny" class="shiny" id="shiny">
+                </button>
+
+                <button id="alter-theme">
+                    <img src="./src/imagens/sun.png" alt="sol" class="sun">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <ul class="listagem-pokemon">
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Eevee</span>
+                    <span>#001</span>
+                </div>
+                <img src="./src/imagens/eevee.gif" class="gif" id="eevee">
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                </ul>
+
+                <p class="descricoes">Eevee is rarely found in the wild and is mostly only found in cities and towns. It
+                    is said to have an irregularly shaped genetic structure that is influenced by its environment.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Vaporeon</span>
+                    <span>#002</span>
+                </div>
+                <img src="./src/imagens/vaporeon.gif" class="gif" id="vaporeon">
+                <ul class="tipos">
+                    <li class="tipo agua">Water</li>
+                </ul>
+
+                <p class="descricoes">Its cell composition is similar to water molecules. As a result, it can't be seen
+                    when it melts away into water. It lives close to water.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Jolteon</span>
+                    <span>#003</span>
+                </div>
+                <img src="./src/imagens/jolteon.gif" class="gif" id="jolteon">
+                <ul class="tipos">
+                    <li class="tipo eletrico">Electric</li>
+                </ul>
+
+                <p class="descricoes">It concentrates the weak electric charges emitted by its cells and launches wicked
+                    lightning bolts.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Flareon</span>
+                    <span>#004</span>
+                </div>
+                <img src="./src/imagens/flareon.gif" class="gif" id="flareon">
+                <ul class="tipos">
+                    <li class="tipo fogo">Fire</li>
+                </ul>
+
+                <p class="descricoes">Inhaled air is carried to its flame sac, heated, and exhaled as fire that reaches
+                    over 3,000 degrees Fahrenheit.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Espeon</span>
+                    <span>#005</span>
+                </div>
+                <img src="./src/imagens/espeon.gif" class="gif" id=“espeon”>
+                <ul class="tipos">
+                    <li class="tipo psiquico">Psychic</li>
+                </ul>
+
+                <p class="descricoes">Espeon's Psychic typing gives it a good defense against Fighting and Psychic-type
+                    moves. However, Espeon is weak to Bug, Ghost, and Dark-type moves.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Bulbasaur</span>
+                    <span>#006</span>
+                </div>
+                <img src="./src/imagens/bulbasaur (1).gif" class="gif" id="bulbasaur">
+                <ul class="tipos">
+                    <li class="tipo grama">Grass</li>
+                    <li class="tipo veneno">Poison</li>
+                </ul>
+
+                <p class="descricoes">Bulbasaur is a Grass/Poison type Pokémon, which makes it weak against Flying,
+                    Fire, Psychic and Ice moves.</p>
+
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Ivisaur</span>
+                    <span>#007</span>
+                </div>
+                <img src="./src/imagens/ivysaur.gif" id="Ivysaur" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo grama">Grass</li>
+                    <li class="tipo veneno">Poison</li>
+                </ul>
+
+                <p class="descricoes">Ivysaur is a Grass/Poison type Pokémon, which makes it weak against Flying, Fire,
+                    Psychic and Ice moves.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Venusaur</span>
+                    <span>#008</span>
+                </div>
+                <img src="./src/imagens/venusaur.gif" id="Venusaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo grama">Grass</li>
+                    <li class="tipo veneno">Poison</li>
+                </ul>
+
+                <p class="descricoes">Venusaur is a Grass/Poison type Pokémon, which makes it weak against Flying, Fire,
+                    Psychic and Ice moves.</p>
+
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charmander</span>
+                    <span>#009</span>
+                </div>
+                <img src="./src/imagens/charmander.gif" id="Charmander" class="gif">
+                <ul class="tipos">
+                    <li class="tipo fogo">Fire</li>
+                </ul>
+
+                <p class="descricoes">Charmander is a Fire type Pokémon, which makes it weak against Ground, Rock and
+                    Water moves.</p>
+
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charmeleon</span>
+                    <span>#010</span>
+                </div>
+                <img src="./src/imagens/charmeleon.gif" id="Charmeleon" class="gif">
+                <ul class="tipos">
+                    <li class="tipo fogo">Fire</li>
+                </ul>
+                <p class="descricoes">Charmeleon is a Fire type Pokémon, which makes it weak against Ground, Rock and
+                    Water moves.</p>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charizard</span>
+                    <span>#011</span>
+                </div>
+                <img src="./src/imagens/charizard.gif" id="Charizard" class="gif">
+                <ul class="tipos">
+                    <li class="tipo fogo">Fire</li>
+                </ul>
+
+                <p class="descricoes">Charizard is a Fire/Flying type Pokémon, which makes it especially weak against
+                    Rock moves, and weak against Water and Electric moves.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Squirtle</span>
+                    <span>#012</span>
+                </div>
+                <img src="./src/imagens/squirtle.gif" id="Squirtle" class="gif">
+                <ul class="tipos">
+                    <li class="tipo agua">Water</li>
+                </ul>
+
+                <p>Squirtle is a Water type Pokémon, which makes it weak against Grass and Electric moves.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Wartortle</span>
+                    <span>#013</span>
+                </div>
+                <img src="./src/imagens/wartortle.gif" id="Wartortle" class="gif">
+                <ul class="tipos">
+                    <li class="tipo agua">Water</li>
+                </ul>
+
+                <p>Wartortle is a Water type Pokémon, which makes it weak against Grass and Electric moves.</p>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Blastoise</span>
+                    <span>#014</span>
+                </div>
+                <img src="./src/imagens/blastoise.gif" id="Blastoise" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo agua">Water</li>
+                </ul>
+
+                <p>Blastoise is a Water type Pokémon, which makes it weak against Grass and Electric moves.</p>
+
+
+
+
+            </li>
+        </ul>
+    </main>
+    <script src="./src/java/index.js"></script>
+</body>
+
+</html>
